@@ -1,4 +1,4 @@
-<html>
+<php>
     <head>
         <title>
             AJF TI 25 - 2026
@@ -68,4 +68,4 @@
     <input type="submit" value="Submit">
     </form>
     </body>
-</html>
+</php>

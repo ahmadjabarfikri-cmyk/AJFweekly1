@@ -1,4 +1,4 @@
-<html>
+<php>
     <head>
         <title>
     WEB TI AJF - 2026
@@ -46,4 +46,4 @@
 </nav>
 
     </body>
-</html>
+</php>
