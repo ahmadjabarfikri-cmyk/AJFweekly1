@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB TI AJF - 2026</title>
+    <title>WEB TI AJF - 2026</title><link rel="stylesheet" href="aset/style.css">
+
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     <br><br>
 
     <div style="text-align: center;">
-        <img src="img/images.jpg" width="100" alt="Foto Profil">
+        <img src="aset/image/gojo.jpg" width="100" alt="Gojo">
     </div>
 
     <h3 align="center">Biodata</h3>

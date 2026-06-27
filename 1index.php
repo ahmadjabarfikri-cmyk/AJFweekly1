@@ -38,70 +38,7 @@ if (isset($_GET['q'])) {
     <title>Laragon</title>
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet">
-
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Karla', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            text-align: center;
-        }
-
-        .content {
-            max-width: 800px;
-            padding: 100px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .title {
-            font-size: 60px;
-            margin: 0;
-        }
-
-        .info {
-            margin-top: 20px;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .info a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .info a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-
-        .opt {
-            margin-top: 30px;
-        }
-
-        .opt a {
-            font-size: 18px;
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .opt a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-    </style>
+<link rel="stylesheet" href="aset/style.css">
 </head>
 
 <body>

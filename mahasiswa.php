@@ -17,7 +17,7 @@ $result = mysqli_query($koneksi, $query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Mahasiswa</title>
+    <title>Data Mahasiswa</title><link rel="stylesheet" href="aset/style.css">
 </head>
 
 <body>
@@ -62,7 +62,7 @@ $result = mysqli_query($koneksi, $query);
                 <td><?= $mhs['email']; ?></td>
                 <td><?= $mhs['no_hp']; ?></td>
                 <td>
-                    <img src="img/<?= $mhs['foto']; ?>" width="80">
+                    <img src="aset/image/gyj.jpg" alt="foto gyj" width="80px"></td>
                 </td>
                 <td>
                     <a href="Editdata.php?id=<?= $mhs['id']; ?>">
