@@ -29,8 +29,9 @@ if (isset($_GET['q'])) {
 }
 ?>
 
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +40,8 @@ if (isset($_GET['q'])) {
     <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet">
 
     <style>
-        php, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -101,38 +103,54 @@ if (isset($_GET['q'])) {
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="content">
-        <h1 class="title">Laragon</h1>
+    <div class="container">
+        <div class="content">
 
-        <div class="info">
-            <?php if ($isLocal): ?>
-                <p><?= htmlspecialchars($_SERVER['SERVER_SOFTWARE'], ENT_QUOTES, 'UTF-8'); ?></p>
-                <p>
-                    PHP version: <?= htmlspecialchars(PHP_VERSION, ENT_QUOTES, 'UTF-8'); ?>
-                    <a title="phpinfo()" href="/?q=info">info</a>
-                </p>
-                <p>
-                    Document Root:
-                    <?= htmlspecialchars($_SERVER['DOCUMENT_ROOT'], ENT_QUOTES, 'UTF-8'); ?>
-                </p>
-            <?php else: ?>
-                <p>Server is running</p>
-                <p>PHP is enabled</p>
-            <?php endif; ?>
-        </div>
+            <h1 class="title">Laragon</h1>
 
-        <div class="opt">
-            <p>
-                <a href="https://laragon.org/docs" target="_blank" rel="noopener">
-                    Getting Started
-                </a>
-            </p>
+            <div class="info">
+
+                <?php if ($isLocal): ?>
+
+                    <p>
+                        <?= htmlspecialchars($_SERVER['SERVER_SOFTWARE'], ENT_QUOTES, 'UTF-8'); ?>
+                    </p>
+
+                    <p>
+                        PHP Version:
+                        <?= htmlspecialchars(PHP_VERSION, ENT_QUOTES, 'UTF-8'); ?>
+                        |
+                        <a href="?q=info" title="phpinfo()">phpinfo()</a>
+                    </p>
+
+                    <p>
+                        Document Root:<br>
+                        <?= htmlspecialchars($_SERVER['DOCUMENT_ROOT'], ENT_QUOTES, 'UTF-8'); ?>
+                    </p>
+
+                <?php else: ?>
+
+                    <p>Server is running.</p>
+                    <p>PHP is enabled.</p>
+
+                <?php endif; ?>
+
+            </div>
+
+            <div class="opt">
+                <p>
+                    <a href="https://laragon.org/docs" target="_blank" rel="noopener">
+                        Getting Started
+                    </a>
+                </p>
+            </div>
+
         </div>
     </div>
-</div>
 
 </body>
-</php>
+
+</html>
