@@ -1,3 +1,19 @@
+<?php
+
+$koneksi = mysqli_connect("localhost","root","","ajfweekly");
+if ($koneksi)
+    {
+        echo"koneksi berhasil!!";
+    }
+
+    $quary = "SELECT * FROM mahasiswa";
+
+mysqli_query($koneksi, $quary); ///lemari
+/// ambil data (fetch) dari mahasiswa
+
+?>
+
+
 <!DOCTYPE php>
 <php lang="en">
 <head>
@@ -28,7 +44,17 @@
         <br><br>
         <h2>data mahasiswa</h2>
         <table border="1" cellpadding="5px">
-            <tr>
+            
+        <?php
+
+         while($mhs = mysqli_fetch_row($result))
+{
+   var_dump($mhs); 
+}
+?>
+        
+        
+        <tr>
                 <th> no </th>
                 <th> nama </th>
                 <th> nim </th>
