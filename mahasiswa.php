@@ -48,6 +48,7 @@ $query = "SELECT * FROM mahasiswa";
             <th>Foto</th>
             <th>Aksi</th>
         </tr>
+        <a href="tambahdata.php"><button>Tambah data</button></a>
 
         <?php
         $no = 1;
@@ -69,7 +70,7 @@ $query = "SELECT * FROM mahasiswa";
                         <button>Edit</button>
                     </a>
 
-                    <a href="hapusdata.php?id=<?= $mhs['id']; ?>"onclick='retun confirm('yakinn?')" >
+                    <a href="hapusdata.php?id=<?= $mhs['id']; ?>"onclick='return confirm('yakinn?')" >
                         <button>Hapus</button>
                     </a>
                 </td>
