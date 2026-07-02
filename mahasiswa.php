@@ -1,13 +1,10 @@
 <?php
-
-$koneksi = mysqli_connect('localhost', 'root', '', 'ajfweekly');
-
+require 'fungsi.php';
 if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
-
 $query = "SELECT * FROM mahasiswa";
-$result = mysqli_query($koneksi, $query);
+  $mahasiswas = tampildata($query); ///wadah isi data
 
 ?>
 
@@ -52,10 +49,13 @@ $result = mysqli_query($koneksi, $query);
             <th>Aksi</th>
         </tr>
 
-        <?php while ($mhs = mysqli_fetch_assoc($result)) { ?>
+        <?php
+        $no = 1;
+         foreach($mahasiswas as $mhs)
+          { ?>
 
             <tr>
-                <td><?= $mhs['id']; ?></td>
+                <td><?= $no ?></td>
                 <td><?= $mhs['nama']; ?></td>
                 <td><?= $mhs['nim']; ?></td>
                 <td><?= $mhs['prodi']; ?></td>
@@ -69,13 +69,15 @@ $result = mysqli_query($koneksi, $query);
                         <button>Edit</button>
                     </a>
 
-                    <a href="hapusdata.php?id=<?= $mhs['id']; ?>">
+                    <a href="hapusdata.php?id=<?= $mhs['id']; ?>"onclick='retun confirm('yakinn?')" >
                         <button>Hapus</button>
                     </a>
                 </td>
             </tr>
 
-        <?php } ?>
+        <?php
+        $no++;
+        } ?>
 
     </table>
 
