@@ -21,7 +21,7 @@
     <h1>Halaman Profile</h1>
 
     <p>
-        Selamat datang di halaman profil.
+        Selamat datang di profile ahmad jabar fikri
     </p>
 
 </body>
